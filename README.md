@@ -11,3 +11,10 @@ when you want to call a function with its selector youre basically combining the
 
 **Sending Ethereum Transactions**
 When you send an Ethereum transaction to call a function on a smart contract, you include the encoded data with the selector. The Ethereum network and the contract's code use the selector to identify the function being called and execute the corresponding code.
+
+**Solidity Example - Encode with Selector:**
+Continuing from the example above, the function selector is a hash of the function signature. In this case, it's something like 0x12345678, where 12345678 is the hash of the function signature set(uint256).
+
+When you encode the function call with its selector, you're combining the selector (0x12345678) with the parameter value (123). This creates a single piece of data that represents the function call, and you include this data in the Ethereum transaction when calling the function.
+
+Remember, while this may seem complex at first, it's a fundamental concept when interacting with Ethereum smart contracts. It ensures that your function calls are correctly understood by the contract, leading to the expected behavior.

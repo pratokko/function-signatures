@@ -18,3 +18,4 @@ Continuing from the example above, the function selector is a hash of the functi
 When you encode the function call with its selector, you're combining the selector (0x12345678) with the parameter value (123). This creates a single piece of data that represents the function call, and you include this data in the Ethereum transaction when calling the function.
 
 Remember, while this may seem complex at first, it's a fundamental concept when interacting with Ethereum smart contracts. It ensures that your function calls are correctly understood by the contract, leading to the expected behavior.
+No worries if you cant get this the first time simply go through multiple time and it will slowly start making sense. Think of this as a hash that identifies a function. so no conflicts
